@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "foodName": "Havregrøt",
+    "quantityGrams": 250,
+    "mealType": "breakfast",
+    "date": "2026-10-20"
+  },
+  {
+    "id": 2,
+    "foodName": "Kyllingfilet",
+    "quantityGrams": 180,
+    "mealType": "lunch",
+    "date": "2026-10-20"
+  },
+  {
+    "id": 3,
+    "foodName": "Laks",
+    "quantityGrams": 200,
+    "mealType": "dinner",
+    "date": "2026-10-19"
+  },
+  {
+    "id": 4,
+    "foodName": "Eple",
+    "quantityGrams": 150,
+    "mealType": "snack",
+    "date": "2026-10-19"
+  }
+]
