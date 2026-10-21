@@ -15,15 +15,11 @@ OnlyGainz Web er en enkel webapp for å loggføre måltider og se kalorier og ma
 1. Last ned prosjektet og åpne en terminal i prosjektmappen (`onlyGainzWeb`).
 2. Installer avhengighetene:
 
-   ```shell
    pnpm install
-   ```
 
 3. Start utviklingsserveren:
 
-   ```shell
    pnpm dev
-   ```
 
 4. Åpne adressen som vises i terminalen i nettleseren. Den er vanligvis `http://localhost:5173`.
 
