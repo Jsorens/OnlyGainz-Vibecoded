@@ -1,6 +1,7 @@
 // komponent for å lage et nytt måltid
+import type { FormEvent } from "react";
 export function CreateMealForm() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // her kan du legge til logikk for å sende data til API-et
     console.log("Form submitted");

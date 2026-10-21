@@ -1,4 +1,6 @@
 // Inneholder funksjoner for makroberegning og summering. Hold disse uavhengige av React.
+import type { Food, Macros } from "../types/type";
+
 export function calculateMacros(
   foodItem: { calories: number; protein: number; fat: number; carbs: number },
   amount: number,
@@ -10,6 +12,20 @@ export function calculateMacros(
     carbs: (foodItem.carbs * amount) / 100,
   };
 }
+
+// Makroer for en gitt mengde (gram) av en matvare fra foods.json.
+export function macrosForFood(food: Food, grams: number): Macros {
+  return calculateMacros(
+    {
+      calories: food.caloriesPer100g,
+      protein: food.proteinPer100g,
+      fat: food.fatPer100g,
+      carbs: food.carbsPer100g,
+    },
+    grams,
+  );
+}
+
 export function sumMacros(
   macrosArray: {
     calories: number;

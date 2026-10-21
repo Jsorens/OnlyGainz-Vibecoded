@@ -1,5 +1,5 @@
-import mealsData from "../storage/meals.json";
-import type { MealEntry } from "../types/type";
+import mealsData from "../../../storage/meals.json";
+import type { MealEntry } from "../../../types/type";
 
 // JSON-en bundles inn i workeren. Endringer lever kun i minnet.
 const meals: MealEntry[] = [...(mealsData as unknown as MealEntry[])];

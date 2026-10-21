@@ -1,6 +1,6 @@
-import { service, IMealService } from "./nutrition-service";
+import { service, type IMealService } from "../service/nutrition-service";
 import type { RequestInfo } from "rwsdk/worker";
-import type { MealEntry } from "../types/type";
+import { toResponse } from "../../utils/respond";
 
 export interface MealController {
   create(requestInfo: RequestInfo): Promise<Response>;
@@ -13,38 +13,27 @@ export interface MealController {
 
 export function createMealController(_service: IMealService): MealController {
   return {
-    create: async ({ request }: RequestInfo) => {
-      // Implement create logic here
+    // POST /api/v1/meals -> 201 Created, 400 ved ugyldig input, 404 ukjent matvare
+    async create({ request }: RequestInfo) {
+      let body: unknown;
       try {
-        const body = await request.json();
-        const result = await _service.create(body);
-        return Response.json({ ok: true, data: result.ok }, { status: 201 });
-      } catch (err) {
+        body = await request.json();
+      } catch {
         return Response.json(
-          {
-            ok: false,
-            error: { code: "500", message: "Kunne ikke opprette måltid" },
-          },
-          { status: 500 },
+          { ok: false, error: { code: "400", message: "Ugyldig JSON" } },
+          { status: 400 },
         );
       }
+      return toResponse(await _service.create(body), 201);
     },
     async find(requestInfo: RequestInfo) {
       // Implement find logic here
       return new Response();
     },
+    // GET /api/v1/meals?date=YYYY-MM-DD
     async list({ request }: RequestInfo) {
       const date = new URL(request.url).searchParams.get("date") ?? undefined;
-      const result = await _service.list({ date });
-
-      if (!result.ok) {
-        return Response.json(
-          { ok: false, error: result.error },
-          { status: Number(result.error.code) },
-        );
-      }
-
-      return Response.json({ ok: true, data: result.data }, { status: 200 });
+      return toResponse(await _service.list({ date }));
     },
     async remove(requestInfo: RequestInfo) {
       // Implement remove logic here
