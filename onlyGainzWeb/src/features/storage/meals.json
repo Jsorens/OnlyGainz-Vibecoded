@@ -180,5 +180,33 @@
       "fat": 28.6
     },
     "id": "91ccc17a-3c51-47a0-9267-40b22a1c2c9f"
+  },
+  {
+    "foodId": "04.331",
+    "foodName": "Sashimi, laks",
+    "quantityGrams": 111,
+    "mealType": "breakfast",
+    "date": "2026-10-24",
+    "macros": {
+      "calories": 248,
+      "protein": 22.1,
+      "carbs": 0,
+      "fat": 17.6
+    },
+    "id": "a191d218-2953-4bc9-80a5-2ec886fbbfde"
+  },
+  {
+    "foodId": "01.306",
+    "foodName": "Skyr, banan",
+    "quantityGrams": 136,
+    "mealType": "lunch",
+    "date": "2026-10-24",
+    "macros": {
+      "calories": 101,
+      "protein": 13.6,
+      "carbs": 10.9,
+      "fat": 0.3
+    },
+    "id": "b9f1d880-4e32-4e94-a0eb-27bb0d38d131"
   }
 ]
