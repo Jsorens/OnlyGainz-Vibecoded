@@ -1,5 +1,5 @@
 # OnlyGainz Web
-
+Viktige instruksjoner for avhengigheter, og hvordan man starter appen
 OnlyGainz Web er en enkel webapp for å loggføre måltider og se kalorier og makronæringsstoffer (protein, karbohydrater og fett) per dag. Appen er bygget med React og TypeScript på [RedwoodSDK](https://docs.rwsdk.com/), og kjører på Cloudflare Workers.
 
 ## Slik starter du applikasjonen

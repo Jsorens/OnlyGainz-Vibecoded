@@ -40,5 +40,61 @@
       "fat": 0.3
     },
     "id": "ad3a4a01-5a04-45ca-9c2d-87474be437a7"
+  },
+  {
+    "foodId": "04.255",
+    "foodName": "Laks, filet, gravet",
+    "quantityGrams": 201,
+    "mealType": "breakfast",
+    "date": "2026-10-21",
+    "macros": {
+      "calories": 360,
+      "protein": 42.6,
+      "carbs": 5.6,
+      "fat": 18.5
+    },
+    "id": "b0c0a85b-79ac-4741-9505-f9de4b5cb180"
+  },
+  {
+    "foodId": "04.255",
+    "foodName": "Laks, filet, gravet",
+    "quantityGrams": 201,
+    "mealType": "breakfast",
+    "date": "2026-10-21",
+    "macros": {
+      "calories": 360,
+      "protein": 42.6,
+      "carbs": 5.6,
+      "fat": 18.5
+    },
+    "id": "38d488da-cafb-4226-86c5-b887165263a2"
+  },
+  {
+    "foodId": "01.002",
+    "foodName": "Lettmelk, 1,0 % fett, Tine",
+    "quantityGrams": 251,
+    "mealType": "breakfast",
+    "date": "2026-10-21",
+    "macros": {
+      "calories": 103,
+      "protein": 8.8,
+      "carbs": 11.3,
+      "fat": 2.5
+    },
+    "id": "71b5893a-5513-4d50-bb50-9e8756494ea6"
+  },
+  {
+    "foodId": "11.103",
+    "foodName": "Barnemat, middag, ragú, fra 8 mnd",
+    "quantityGrams": 151,
+    "mealType": "lunch",
+    "date": "2026-10-22",
+    "macros": {
+      "calories": 118,
+      "protein": 5,
+      "carbs": 14.8,
+      "fat": 3.8
+    },
+    "id": "26e9afbd-8e5d-43ed-bfcb-d6e6e186af03"
   }
 ]
